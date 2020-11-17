@@ -51,13 +51,13 @@ DO NOT ALTER THE EXISTING HTML TO DO THIS.  WRITE ONLY CSS! */
 	}
 
 /*Make only inputs with type 'text' have a gray background*/
-	input[type=text]{
+	input[type="text"]{
 		background-color: #808080;
 
 	}
 
 /* Give both <p>'s inside the 3rd <div> a pink background*/
-	div:nth-child(3) p { 
+	div:nth-of-type(3) p { 
 		background-color: #FF69B4;
 	}
 
@@ -78,7 +78,7 @@ DO NOT ALTER THE EXISTING HTML TO DO THIS.  WRITE ONLY CSS! */
 /*You may need to research some other selectors and properties*/
 
 /*Make all "checked" checkboxes have a left margin of 50px(margin-left: 50px)*/
-	ul{
+	input:checked {
 		margin-left: 50px;
 	}
 
@@ -88,7 +88,7 @@ DO NOT ALTER THE EXISTING HTML TO DO THIS.  WRITE ONLY CSS! */
 	}
 
 /*Make the first letter of the element with id 'special' green and 100px font size(font-size: 100)*/
-	#special : first-letter{
+	#special::first-letter{
 		color: green;
 		font-size: 100px;
 
